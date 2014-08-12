@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lyric: MyString
+  artist: MyString
+  link_url: MyString
+
+two:
+  lyric: MyString
+  artist: MyString
+  link_url: MyString
