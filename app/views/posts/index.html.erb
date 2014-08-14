@@ -13,6 +13,7 @@
         <br />
         <div class="lyric_link"><a href="<%= p.link_url %>">Listen to the song</a></div>
         <br />
+        <%= link_to "edit", edit_post_path(p) %>
       </li>
     <% end %>
   </ul>
