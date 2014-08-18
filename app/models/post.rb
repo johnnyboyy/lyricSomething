@@ -18,12 +18,12 @@ class Post < ActiveRecord::Base
 
 
   def url_is_the_proper_format
-    if link_url.present? && link_url.start_with?("http://www.")
+    if link_url.present? && url_is_valid?
       return true
     else
-      if url_is_valid?
+      if /.\.com\/./ === lyic.link_url
         self.convert_to_proper_url_format
-      else 
+      else          
         errors.add(:link_url, "The URL is not valid.")
       end
     end
@@ -32,7 +32,7 @@ class Post < ActiveRecord::Base
 
   def convert_to_proper_url_format
     
-    if /[www]/ === self.link_url
+    if /^+[www]+\./ === self.link_url
       self.link_url = self.link_url.prepend("http://")
     else
       self.link_url = self.link_url.prepend("http://www.")
