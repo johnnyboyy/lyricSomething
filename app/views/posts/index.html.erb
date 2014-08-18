@@ -1,23 +1,32 @@
-<h1>Listing posts</h1>
+<div class="row">
+
+  <%= render "/posts/sideAjaxForm" %>
+
+
+  <div class="col-sm-8">
+
+    <h1>Listing posts</h1>
 
 
 
 
-<div class="post_div">
-  <ul class="post_list">
-    <% @posts.each do |p| %>
-      <li class="post_list_item">
-        <div class="lyric"><%= p.lyric %> </div>
-        <br />
-        <div class="artist"><%= p.artist %></div> 
-        <br />
-        <div class="lyric_link"><a href="<%= p.link_url %>">Listen to the song</a></div>
-        <br />
-        <%= link_to "edit", edit_post_path(p) %>
-      </li>
-    <% end %>
-  </ul>
+    <div class="post_div">
+      <ul class="post_list">
+        <% @posts.each do |p| %>
+          <li class="post_list_item">
+            <div class="lyric"><%= p.lyric %> </div>
+            <br />
+            <div class="artist"><%= p.artist %></div> 
+            <br />
+            <div class="lyric_link"><a href="<%= p.link_url %>">Listen to the song</a></div>
+            <br />
+            <%= link_to "edit", edit_post_path(p) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+      
+    <%= link_to 'New Post', new_post_path %>
+  </div>
+
 </div>
-
-  
-<%= link_to 'New Post', new_post_path %>
