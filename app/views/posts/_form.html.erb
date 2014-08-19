@@ -1,4 +1,4 @@
-<%= form_for(@post) do |f| %>
+<%= form_for @post, remote:true do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -11,19 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :lyric %><br>
-    <%= f.text_field :lyric %>
+    <%= f.text_area :lyric, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :artist %><br>
-    <%= f.text_field :artist %>
+    <%= f.text_field :artist, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :link_url %><br>
-    <%= f.text_field :link_url %>
+    <%= f.text_field :link_url, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Post Lyric", class: "btn btn-default" %>
   </div>
 <% end %>

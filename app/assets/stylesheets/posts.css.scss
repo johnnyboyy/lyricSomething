@@ -1,5 +1,21 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+.post-form{
+  position: fixed;
+  margin-top: 30px;
+
+}
+
+#post-list{
+  list-style: none;
+}
+
+.lyric{
+  font-size: 18pt;
+}
+
+.post-list-item{
+  margin: 25px 0;
+  padding: 15px;
+  border: 1pt solid rgba(22,22,22,0.5);
+}

@@ -21,7 +21,7 @@ class Post < ActiveRecord::Base
     if link_url.present? && url_is_valid?
       return true
     else
-      if /.\.com\/./ === lyic.link_url
+      if /.\.com\/./ === link_url
         self.convert_to_proper_url_format
       else          
         errors.add(:link_url, "The URL is not valid.")

@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
     @post = Post.new
   end
 
@@ -29,8 +29,8 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @post }
+        # format.html { redirect_to 'posts#index', notice: 'Post was successfully created.' }
+        format.js { render 'posts/ajaxPost', status: :created, notice: 'Post was successfully created.' }
       else
         format.html { render action: 'new' }
         format.json { render json: @post.errors, status: :unprocessable_entity }
