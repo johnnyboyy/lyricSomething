@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
 
+  validates :lyric, :artist, presence: true
 
   validate :url_is_the_proper_format
 

@@ -32,7 +32,7 @@ class PostsController < ApplicationController
         # format.html { redirect_to 'posts#index', notice: 'Post was successfully created.' }
         format.js { render 'posts/ajaxPost', status: :created, notice: 'Post was successfully created.' }
       else
-        format.html { render action: 'new' }
+        format.html { render action: 'new', alert: "#{@post.errors.count} errors prevented this post from being saved." }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
