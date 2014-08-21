@@ -1,4 +1,5 @@
 LyricLeech::Application.routes.draw do
+  get "static/about"
   resources :posts
 
   root 'posts#index'
