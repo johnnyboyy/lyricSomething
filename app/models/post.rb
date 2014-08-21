@@ -41,4 +41,15 @@ class Post < ActiveRecord::Base
 
 
   end
+
+
+  def embed_url
+    url = self.link_url
+
+    if /youtube/ === url
+      url.gsub!("watch?v=", "embed/")
+    end
+
+    return "/" + url[7..-1]
+  end
 end

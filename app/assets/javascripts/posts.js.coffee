@@ -73,12 +73,12 @@ addErrorMessage = (field) ->
   return
 
 succesfulPostMessage = ->
-  $("div.navbar").append "<div class=\"alert alert-success\">Succesful Post!!!</div>"
+  $("#alerts").append "<p class=\"alert alert-success\">Succesful Post!!!</p>"
   fadeAlert()
   return
 
 errorPostMessage = ->
-  $("div.navbar").append "<div class=\"alert alert-danger\">Error! The post isn't valid!!!</div>"
+  $("#alerts").append "<p class=\"alert alert-danger\">Error! The post isn't valid!!!</p>"
   fadeAlert()
   return
 
