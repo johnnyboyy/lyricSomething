@@ -1,14 +1,3 @@
-addErrorMessage = undefined
-addErrorStyling = undefined
-clearFields = undefined
-clearMessages = undefined
-errorPostMessage = undefined
-fieldIsEmpty = undefined
-fields = undefined
-resetStyle = undefined
-succesfulPostMessage = undefined
-validFields = undefined
-validUrl = undefined
 
 fields = $(".form-control")
 validFields = [
