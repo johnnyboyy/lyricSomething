@@ -1,10 +1,16 @@
-<h1>About</h1>
-<p class="about-text">
-  This web-app was built for fun by myself, <a href="http://www.johnzdanis.com">John Zdanis</a>.
-  I noticed that my facebook friends would often post song lyrics as status updates,
-  and thought, why not build an web-app just for that? So I did.
-</p>
-<p class="about-text">
-  It was named "Lyric Leech" by suggestion of my friend, <a href= "https://www.facebook.com/JoshQNelson?fref=ufi"> Joshua Nelson</a>.
-  There were many other suggestions as well, but this was the only one with a '.com' avaiable.
-</p>
+#LyricLeech
+
+This web-app was built for fun by myself, John Zdanis :
+
+http://www.johnzdanis.com
+
+
+I noticed that my facebook friends would often post song lyrics as status updates,
+and thought, why not build an web-app just for that? So I did.
+
+
+It was named "Lyric Leech" by suggestion of my friend,Joshua Nelson
+
+https://www.facebook.com/JoshQNelson?fref=ufi
+
+There were many other suggestions as well, but this was the only one with a '.com' avaiable.
