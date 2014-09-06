@@ -1,4 +1,4 @@
-#LyricLeech
+# LyricLeech
 
 This web-app was built for fun by myself, John Zdanis :
 
