@@ -32,11 +32,16 @@ div.lyric_link iframe {
 }
 
 
-/*767px width*/
-
+/*Undo form stickyness for mobile screens*/
 @media screen and (max-width: 767px) {
   .post-form {
     position: relative;
     display: inline-block;
+  }
+}
+/*make youtube video aspect ratio look better on desktops*/
+@media screen and (min-width: 600px) {
+  div.lyric_link iframe {
+    height: 315px;
   }
 }
