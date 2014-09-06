@@ -1,28 +1,10 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<h1>About</h1>
+<p class="about-text">
+  This web-app was built for fun by myself, <a href="http://www.johnzdanis.com">John Zdanis</a>.
+  I noticed that my facebook friends would often post song lyrics as status updates,
+  and thought, why not build an web-app just for that? So I did.
+</p>
+<p class="about-text">
+  It was named "Lyric Leech" by suggestion of my friend, <a href= "https://www.facebook.com/JoshQNelson?fref=ufi"> Joshua Nelson</a>.
+  There were many other suggestions as well, but this was the only one with a '.com' avaiable.
+</p>
