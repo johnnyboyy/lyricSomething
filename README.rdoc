@@ -1,6 +1,6 @@
 LyricLeech
 
-This web-app was built for fun by myself, John Zdanis :
+This web-app was built for fun by myself, John Zdanis:
 
 http://www.johnzdanis.com
 
