@@ -1,15 +1,16 @@
 
 
 .post-form{
-  position: fixed;
   margin-top: 30px;
   word-wrap: break-word;
   max-width: 300px;
+  position: fixed;
 
 }
 
 #post-list{
   list-style: none;
+  padding-left: 0;
 }
 
 .lyric{
@@ -20,4 +21,22 @@
   margin: 25px 0;
   padding: 15px;
   border: 1pt solid rgba(22,22,22,0.5);
+}
+
+div.lyric_link iframe {
+  max-width: 560px;
+  width: 100%;
+  max-height: 315px;
+  min-height: 200px;
+  height: 100%;
+}
+
+
+/*767px width*/
+
+@media screen and (max-width: 767px) {
+  .post-form {
+    position: relative;
+    display: inline-block;
+  }
 }
